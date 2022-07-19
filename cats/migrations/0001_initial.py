@@ -14,10 +14,20 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Cat',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=16)),
-                ('color', models.CharField(max_length=16)),
-                ('birth_year', models.IntegerField()),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('name',
+                 models.CharField(
+                     max_length=16)),
+                ('color',
+                 models.CharField(
+                     max_length=16)),
+                ('birth_year',
+                 models.IntegerField()),
             ],
         ),
     ]
